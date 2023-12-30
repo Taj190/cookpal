@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: auto;
+}
+#logo{
+    margin: 20px;
+}
+#navlink > ul {
+    display: flex;
+}
+#navlink > ul > li{
+    list-style: none;
+    padding:20px;
+    margin-right: 20px;
+    font-size: 16px;
+  font-style: normal;
+ font-weight: 500;
+ line-height: normal;
+ transition: all 1s ease-in-out;
+}
+#navlink > ul > li:hover{
+    cursor: pointer;
+    color: #509E2F;
+    transform: scale(1.2);
+}
+#toggle-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(16, 15, 15);
+    display: none; /* Initially hide the toggle icon on larger screens */
+  }
+  /* hero section */
+  #hero-section{
+    background-image: url(./img/Rectangle\ 20.png);
+    width: 90vw;
+    height: 355px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border-radius: 30px;
+  }
+  #trending-now{
+    margin-left: 80px;
+    padding-top: 30px;
+  }
+  #trending-now p:first-child{
+    color: #DC582A;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+  }
+#trending-now > h2 {
+    color: #FFF;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+}
+#trending-now p:last-child{
+    color: #FFF;
+    font-size: 20px;
+}
+#search{
+width : 80vw;
+margin: auto;
+margin-top: 30px; 
+}
+
+#search-section {
+    display: flex;
+    align-items: center;
+    width : 80vw;
+     margin: auto;
+     margin-top: 30px;
+  }
+  
+  #search-bar {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+   
+  }
+  
+  #search-section img {
+    width: 38px; 
+    height: auto;
+    cursor: pointer;
+    background-color: #509E2F;
+  }
+  #dish-btn{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+  }
+  #dish-btn button:first-child{
+    display: flex;
+   border: none;
+    width: 200.8px;
+    height: 60px;
+    padding: 20px 25px 20px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+   background: #EAAA00;
+   color:#FFF
+  }
+  #dish-btn button:nth-child(2){
+    display: flex;
+    border: none;
+     width: 200.8px;
+     height: 60px;
+     padding: 20px 25px 20px 20px;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+    background:#C4D600;
+    margin-inline: 20px;
+    color:#FFF
+   }
+   #dish-btn button:nth-child(3){
+    display: flex;
+    border: none;
+     width: 200.8px;
+     height: 60px;
+     padding: 20px 25px 20px 20px;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+    background:#DC582A;
+    color:#FFF
+    
+   }
+   /* reting -dishes */
+   #rating-dishes{
+    display: flex;
+    width:90vw ;
+    margin: auto;
+    margin-top: 40px;
+   }
+   #rating-filter{
+    flex: 0.5;
+   }
+   #All-dish-list{
+    flex :2;
+    flex-wrap: wrap;
+    display: flex;
+    
+   }
+   .veg-only{
+    flex-wrap: wrap;
+    display: flex;
+   }
+   .non-veg {
+    flex-wrap: wrap;
+    display: flex;
+   }
+   .dish-detail{
+    margin-inline:20px;
+    margin-top: 10px;
+   }
+   
+   #rating-filter{
+    display: flex;
+    flex-direction: column;
+   }
+   .type{
+  color: #A1A1A1;
+  font-size: 10px;
+  font-style: normal;
+   }
+   .dish-detail{
+   max-width: 280px;
+   }
+  .time , .name{
+    display:flex;
+    justify-content: space-between;
+  }
+  .time div:first-child{
+    color:#DC582A;
+  }
+  .name div:first-child{
+    font-size: 20px;
+  }
+ 
+  #rating-filter > p {
+    margin:15px
+  }
+  footer{
+    width:90vw ; 
+    margin: auto;
+    margin-top: 30px;
+  }
+  #footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo{
+    flex :0.3;
+  }
+  .nav-links{
+    flex : 0.3 ;
+    margin-left: 150px;
+  }
+  .resources{
+    flex:0.5;
+    margin-left: 150px;
+  }
+  .logo-2{
+    flex:0.4;
+  }
+  li{
+    list-style: none;
+    padding: 5px;
+  }
+  .logo-2 > button {
+    font-family: Archivo;
+font-size: 16px;
+font-style: normal;
+background-color: #509E2F;
+color: white ;
+border: none;
+padding: 12px;
+  }
+@media only screen and (max-width: 600px) {
+    #navlink {
+      display: none; 
+      flex-direction: column;
+      position: absolute;
+      top: 65px;
+      left: 0;
+      width: 100%;
+     height:100%;
+    }
+  
+    #navlink.show {
+      display: flex; 
+      flex-direction: column;
+     
+    }
+
+    #toggle-icon {
+        display: block; 
+      }
+      #hero-section{
+        width: 90vw;
+        height: 250px;
+        margin-top: 30px;
+      }
+      #trending-now{
+        margin-left: 20px;
+        
+      }
+      #trending-now p:first-child{
+        font-size: 16px;
+      }
+      #trending-now > h2 {
+        font-size: 25px;
+      }
+      #trending-now p:last-child{
+        font-size: 12px;
+      }
+      #dish-btn{
+        width: 95%;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+      }
+      #rating-dishes{
+        display:flex ;
+        flex-direction: column;
+        width:100vw
+      }
+      .dish-detail{
+        max-width: 100px;
+        }
+        .name div:first-child{
+            font-size: 12px;
+          }
+          #All-dish-list{
+            
+            flex-wrap: wrap;
+            display: flex;
+            
+           }
+           .dish-detail>img{
+            width:100px ;
+           }
+           .social-media > span > img{
+            width: 10px;
+           }
+    #above-below{
+        display: flex;
+    }
+    #above-below > input {
+        margin-inline:10px;
+    }
+    #rating-filter > h3 {
+        display: none;
+    }
+     .nav-links , .resources , .logo-2{
+      display: none;
+     }
+    
+     .logo{
+      flex :1;
+      text-align: center;
+    }
+}
