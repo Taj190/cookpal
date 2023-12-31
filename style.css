@@ -267,6 +267,11 @@ padding: 12px;
     max-width: 102px;
   
   }
+  #result-found{
+   
+    display: flex;
+    justify-content: center;
+  }
  
 @media only screen and (max-width: 600px) {
     #navlink {
