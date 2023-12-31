@@ -195,8 +195,12 @@ margin-top: 30px;
   }
  
   #rating-filter > p {
-    margin:15px
+    margin:15px 0px;
   }
+  #input{
+    margin: 10px 0px;
+  }
+
   footer{
     width:90vw ; 
     margin: auto;
@@ -233,7 +237,37 @@ background-color: #509E2F;
 color: white ;
 border: none;
 padding: 12px;
+
   }
+  /* dynamically */
+  #rating-dynamically{
+    display: flex ;
+    width : 90vw ;
+    margin: auto;
+    margin-top: 30px;
+  }
+  #rating-filter{
+    flex : 0.8 ;
+    margin-left: 50px;
+    
+  }
+  #result-container{
+    flex:2 ;
+    display:flex ; 
+    flex-wrap: wrap;
+  }
+  #result-container{
+    display: flex;
+  }
+  .dish-detail >img{
+    width : 100px ;
+    height : 100px ;
+  }
+  .dish-detail{
+    max-width: 102px;
+  
+  }
+ 
 @media only screen and (max-width: 600px) {
     #navlink {
       display: none; 
@@ -307,9 +341,7 @@ padding: 12px;
     #above-below > input {
         margin-inline:10px;
     }
-    #rating-filter > h3 {
-        display: none;
-    }
+    
      .nav-links , .resources , .logo-2{
       display: none;
      }
@@ -317,5 +349,19 @@ padding: 12px;
      .logo{
       flex :1;
       text-align: center;
+    }
+    /* dynamically added data */
+    #rating-dynamically{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #rating-filter > p {
+      display: none;
+    }
+    #result-container{
+      display: flex;
+      justify-content: center;
     }
 }

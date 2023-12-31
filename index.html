@@ -40,7 +40,9 @@
     </div>
     <div id="search-section">
         <input type="text" id="search-bar" placeholder="Enter a dish name...">
-        <img src="./img/li_search.svg" alt="">
+        <img src="./img/li_search.svg" alt="" id="search-button">
+      </div>
+      <div id="result-found">
       </div>
   </section>
   <!-- choose the dishes -->
@@ -48,11 +50,29 @@
     <div id="dish-btn">
         <button id="allrecipes">All Recipes <img src="./img/chevron.svg" alt=""></button>
         <button id="vegRecipes">Veg Recipes Only <img src="./img/chevron.svg" alt=""></button>
-        <button id="Nonveg">Non -Veg Recipes <img src="./img/chevron.svg" alt=""></button>
+        <button id="Nonveg">Non-Veg-Recipes <img src="./img/chevron.svg" alt=""></button>
     </div>
   </section>
 
-<section>
+ <section >
+ <div id="rating-dynamically">
+  <div id="rating-filter">
+   <h3>Filter</h3>
+   <p>Rating</p>
+   <label id="input">
+     <input type="radio" name="rating" value="above"> Rating Above 4.5
+   </label>
+   <label>
+     <input type="radio" name="rating" value="below"> Rating Below 4.0
+   </label>
+ </div>
+
+ <div id="result-container">
+ </div>
+</div>
+</section>
+
+<!-- <section>
       <div id="rating-dishes">
 
 
@@ -82,7 +102,7 @@
            </div>
         </div>
         </div>
-    <!-- 2 -->
+    
         <div class="dish-detail">
             <img src="./img/Frontend 2 (3)/image/rounded.png" alt="">
             <div class="type">veg</div>
@@ -98,7 +118,7 @@
               </div>
            </div>
            </div>
- <!-- 3 -->
+ 
  <div class="dish-detail">
     <img src="./img/Frontend 2 (4)/image/rounded.png" alt="">
     <div class="type">veg</div>
@@ -114,7 +134,7 @@
       </div>
    </div>
    </div>
- <!-- 4 -->
+
  <div class="dish-detail">
     <img src="./img/Frontend 2 (3)/image/rounded.png" alt="">
     <div class="type">veg</div>
@@ -130,7 +150,7 @@
       </div>
    </div>
    </div>
-<!-- 5 -->
+
    <div class="dish-detail">
     <img src="./img/Frontend 2/image/rounded.png" alt="">
     <div class="type">veg</div>
@@ -146,7 +166,7 @@
       </div>
    </div>
    </div>
-  <!-- 6 -->
+  
 
   <div class="dish-detail">
     <img src="./img/Frontend 2 (4)/image/rounded.png" alt="">
@@ -164,7 +184,7 @@
    </div>
    </div>
 </div>
-  <!-- non veg section -->
+  
   <div class="non-veg">
   <div class="dish-detail">
     <img src="./img/Frontend 2 (4)/image/rounded.png" alt="">
@@ -181,7 +201,7 @@
       </div>
    </div>
    </div>
-       <!-- 2 -->
+      
        <div class="dish-detail">
         <img src="./img/Frontend 2 (5)/image/rounded.png" alt="">
         <div class="type">non veg</div>
@@ -197,7 +217,7 @@
           </div>
        </div>
        </div>
-      <!-- 3 -->
+      
       <div class="dish-detail">
         <img src="./img/Frontend 2 (6)/image/rounded.png" alt="">
         <div class="type">non veg</div>
@@ -214,7 +234,7 @@
        </div>
        </div>
 
-       <!-- 4 -->
+      
        <div class="dish-detail">
         <img src="./img/Frontend 2 (6)/image/rounded.png" alt="">
         <div class="type">non veg</div>
@@ -231,7 +251,7 @@
        </div>
        </div>
 
-       <!-- 5 -->
+       
        <div class="dish-detail">
         <img src="./img/Frontend 2 (5)/image/rounded.png" alt="">
         <div class="type">non veg</div>
@@ -247,7 +267,7 @@
           </div>
        </div>
        </div>
-   <!-- 6 -->
+   
  
    <div class="dish-detail">
     <img src="./img/Frontend 2 (4)/image/rounded.png" alt="">
@@ -267,14 +287,14 @@
   </div>
 
        </div>
-   <!-- only vegetraian -->
+   
    
 
 
 </div>
 
 
-</section>
+</section> -->
 
 <footer>
    <div id="footer">
